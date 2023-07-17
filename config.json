@@ -1,0 +1,25 @@
+{
+      "searchStrategy": "promotion",
+      "runOnStartup": true,
+      "timezone": "Asia/Shanghai",
+      "cronSchedule": "17 14 * * *",
+      "logLevel": "info",
+      "webPortalConfig": {
+        "baseUrl": "http://localhost:3000",
+      },
+      "accounts": [
+        {
+          "email": "cyme3@mail.io",
+          "password": "Corn2580852@",
+        },
+      ],
+       "notifiers": [
+         // You may configure as many of any notifier as needed
+         // Here are some examples of each type
+         {
+           "type": "telegram",
+           "token": "6348133277:AAGUj36YpPgEgjPD6slE40MG-1alfiN8PFA",
+           "chatId": "1914617587",
+         },
+       ],
+}
