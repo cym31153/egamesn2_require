@@ -1,0 +1,44 @@
+{
+  "runOnStartup": true,
+  "cronSchedule": "0 0,6,12,18 * * *",
+  "logLevel": "info",
+  "webPortalConfig": {
+    "baseUrl": "https://epic.example.com",
+  },
+  "accounts": [
+    {
+      "email": "example@gmail.com",
+    },
+  ],
+   "notifiers": [
+     // You may configure as many of any notifier as needed
+     // Here are some examples of each type
+     {
+       "type": "email",
+       "smtpHost": "smtp.gmail.com",
+       "smtpPort": 587,
+       "emailSenderAddress": "hello@gmail.com",
+       "emailSenderName": "Epic Games Free Games",
+       "emailRecipientAddress": "hello@gmail.com",
+       "secure": false,
+       "auth": {
+           "user": "hello@gmail.com",
+           "pass": "abc123",
+       },
+     },
+     {
+       "type": "discord",
+       "webhookUrl": "https://discord.com/api/webhooks/123456789123456789/A-abcdefghijklmn-abcdefghijklmnopqrst12345678-abcdefghijklmnop123456",
+     },
+     {
+       "type": "telegram",
+       "token": "6348133277:AAGUj36YpPgEgjPD6slE40MG-1alfiN8PFA",
+       "chatId": "1914617587",
+     },
+     {
+       "type": "apprise",
+       "apiUrl": "http://192.168.1.2:8000",
+       "urls": "mailto://user:pass@gmail.com",
+     },
+   ],
+}
